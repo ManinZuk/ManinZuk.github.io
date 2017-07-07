@@ -1,0 +1,757 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="[TOC] VScode使用说明一、概述1. 设计初衷2. 界面介绍二、初始化配置1. 文件首选项2. 主题设置 “文件”→“首选项”→“主题” 2.设置自动保存点击 “文件”→“首选项”→“设置” 进入右边的setting.json界面编辑“用户设置区域”： 12 // 控制已更新文件的自动保存。接受的值:“off”、&quot;afterDelay”、“onFocusChange”(编辑器失去焦点)、“">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vscode入门">
+<meta property="og:url" content="http://yoursite.com/2013/12/02/VScode使用说明/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] VScode使用说明一、概述1. 设计初衷2. 界面介绍二、初始化配置1. 文件首选项2. 主题设置 “文件”→“首选项”→“主题” 2.设置自动保存点击 “文件”→“首选项”→“设置” 进入右边的setting.json界面编辑“用户设置区域”： 12 // 控制已更新文件的自动保存。接受的值:“off”、&quot;afterDelay”、“onFocusChange”(编辑器失去焦点)、“">
+<meta property="og:updated_time" content="2017-07-02T05:17:46.127Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="vscode入门">
+<meta name="twitter:description" content="[TOC] VScode使用说明一、概述1. 设计初衷2. 界面介绍二、初始化配置1. 文件首选项2. 主题设置 “文件”→“首选项”→“主题” 2.设置自动保存点击 “文件”→“首选项”→“设置” 进入右边的setting.json界面编辑“用户设置区域”： 12 // 控制已更新文件的自动保存。接受的值:“off”、&quot;afterDelay”、“onFocusChange”(编辑器失去焦点)、“">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2013/12/02/VScode使用说明/"/>
+
+
+
+
+
+  <title>vscode入门 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2013/12/02/VScode使用说明/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">vscode入门</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2013-12-02T15:30:16+08:00">
+                2013-12-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/编辑器/" itemprop="url" rel="index">
+                    <span itemprop="name">编辑器</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>[TOC]</p>
+<h1 id="VScode使用说明"><a href="#VScode使用说明" class="headerlink" title="VScode使用说明"></a>VScode使用说明</h1><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><h3 id="1-设计初衷"><a href="#1-设计初衷" class="headerlink" title="1. 设计初衷"></a>1. 设计初衷</h3><h3 id="2-界面介绍"><a href="#2-界面介绍" class="headerlink" title="2. 界面介绍"></a>2. 界面介绍</h3><h2 id="二、初始化配置"><a href="#二、初始化配置" class="headerlink" title="二、初始化配置"></a>二、初始化配置</h2><h3 id="1-文件首选项"><a href="#1-文件首选项" class="headerlink" title="1. 文件首选项"></a>1. 文件首选项</h3><h3 id="2-主题设置"><a href="#2-主题设置" class="headerlink" title="2. 主题设置"></a>2. 主题设置</h3><p> “文件”→“首选项”→“主题”</p>
+<h3 id="2-设置自动保存"><a href="#2-设置自动保存" class="headerlink" title="2.设置自动保存"></a>2.设置自动保存</h3><p>点击 “文件”→“首选项”→“设置”</p>
+<p>进入右边的setting.json界面编辑“用户设置区域”：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"> <span class="comment">// 控制已更新文件的自动保存。接受的值:“off”、"afterDelay”、“onFocusChange”(编辑器失去焦点)、“onWindowChange”(窗口失去焦点)。如果设置为“afterDelay”，则可在 "files.autoSaveDelay" 中配置延迟。</span></div><div class="line"><span class="string">"files.autoSave"</span>: <span class="string">"onFocusChange"</span>,</div></pre></td></tr></table></figure>
+<h3 id="2-设置自动补全js"><a href="#2-设置自动补全js" class="headerlink" title="2. 设置自动补全js"></a>2. 设置自动补全js</h3><p>JavaScript Snippet Pack</p>
+<p>JQuery Snippet Pack</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">"editor.snippetSuggestions": "top"</div></pre></td></tr></table></figure>
+<h2 id="三、插件使用"><a href="#三、插件使用" class="headerlink" title="三、插件使用"></a>三、插件使用</h2><ul>
+<li><p>Auto Close Tag</p>
+<blockquote>
+<p>自动补全标签</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p>Auto Rename Tag</p>
+<blockquote>
+<p>重命名标签</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p>CSSTree validator</p>
+<blockquote>
+<p>CSS错误高亮显示</p>
+</blockquote>
+</li>
+<li><p>openChrome</p>
+<blockquote>
+<p>快捷方式 <code>ctrl+alt+a</code> 打开chrome</p>
+</blockquote>
+</li>
+<li><p>path Intellisense</p>
+<blockquote>
+<p>引入文件路径补全</p>
+</blockquote>
+</li>
+</ul>
+<p>vscode-icons</p>
+<p>JavaScript Snippet Pack</p>
+<h2 id="四、常用技巧-快捷键"><a href="#四、常用技巧-快捷键" class="headerlink" title="四、常用技巧/快捷键"></a>四、常用技巧/快捷键</h2><p>ctrl+C ctrl+v 整行赋值</p>
+<p>ctrl+alt 上下方向键</p>
+<p>ctrl+enter 快速换行</p>
+<ul>
+<li><p>多行编辑</p>
+<blockquote>
+<p>alt+shift+鼠标左键</p>
+</blockquote>
+</li>
+<li><p>Ctrl+Shift+P ，调出命令列表，从这里可以看到所有的快捷键</p>
+<p>Shift+Alt+F , 相当于format作用，使代码段自动对齐</p>
+<p>2、Ctrl+/ 注释代码，只要把光标移动到要注释的地方就行</p>
+<p>3、xxx+Tab，快速联想标签，感觉很智能，敲代码时可以省不少事 ，但要注意文件扩展名必须为html；（比如按一下a，再按一下tab，就会发现惊喜！）</p>
+<p>4、alt+up，alt+down，将光标所在行的代码上移或下移一行</p>
+</li>
+<li><p>Ctrl+K Z</p>
+<p>切换到zen模式</p>
+</li>
+</ul>
+<p>Ctrl+Shift+E</p>
+<p>Ctrl+tab</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2013/11/22/BOM操作/" rel="next" title="BOM事件">
+                <i class="fa fa-chevron-left"></i> BOM事件
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/02/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="John Doe" />
+          <p class="site-author-name" itemprop="name">John Doe</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">Artikel</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">Kategorien</span>
+              
+            </div>
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#VScode使用说明"><span class="nav-number">1.</span> <span class="nav-text">VScode使用说明</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、概述"><span class="nav-number">1.1.</span> <span class="nav-text">一、概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-设计初衷"><span class="nav-number">1.1.1.</span> <span class="nav-text">1. 设计初衷</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-界面介绍"><span class="nav-number">1.1.2.</span> <span class="nav-text">2. 界面介绍</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、初始化配置"><span class="nav-number">1.2.</span> <span class="nav-text">二、初始化配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-文件首选项"><span class="nav-number">1.2.1.</span> <span class="nav-text">1. 文件首选项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-主题设置"><span class="nav-number">1.2.2.</span> <span class="nav-text">2. 主题设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-设置自动保存"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.设置自动保存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-设置自动补全js"><span class="nav-number">1.2.4.</span> <span class="nav-text">2. 设置自动补全js</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、插件使用"><span class="nav-number">1.3.</span> <span class="nav-text">三、插件使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、常用技巧-快捷键"><span class="nav-number">1.4.</span> <span class="nav-text">四、常用技巧/快捷键</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
