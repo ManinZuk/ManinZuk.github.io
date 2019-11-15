@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>urzΣric - share simplicity</title>
+    <link>https://urzeric.github.io/</link>
+    <description>Recent content on urzΣric - share simplicity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 15 Nov 2019 16:51:45 +0800</lastBuildDate>
+    
+        <atom:link href="https://urzeric.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Posts</title>
+      <link>https://urzeric.github.io/post/</link>
+      <pubDate>Fri, 15 Nov 2019 16:51:45 +0800</pubDate>
+      
+      <guid>https://urzeric.github.io/post/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

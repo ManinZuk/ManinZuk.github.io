@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on urzΣric - share simplicity</title>
+    <link>https://urzeric.github.io/post/</link>
+    <description>Recent content in Posts on urzΣric - share simplicity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 15 Nov 2019 16:51:45 +0800</lastBuildDate>
+    
+	<atom:link href="https://urzeric.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Third</title>
+      <link>https://urzeric.github.io/post/third/</link>
+      <pubDate>Fri, 15 Nov 2019 16:51:45 +0800</pubDate>
+      
+      <guid>https://urzeric.github.io/post/third/</guid>
+      <description>This is my third weblog hi, everyone ,nice to meet you.</description>
+    </item>
+    
+    <item>
+      <title>First</title>
+      <link>https://urzeric.github.io/post/first/</link>
+      <pubDate>Fri, 15 Nov 2019 16:48:41 +0800</pubDate>
+      
+      <guid>https://urzeric.github.io/post/first/</guid>
+      <description>what the fuck is going on? can you tell me why?</description>
+    </item>
+    
+    <item>
+      <title>Second</title>
+      <link>https://urzeric.github.io/post/second/</link>
+      <pubDate>Fri, 15 Nov 2019 16:46:30 +0800</pubDate>
+      
+      <guid>https://urzeric.github.io/post/second/</guid>
+      <description>Hello, everyone, this is my first weblog, I am who. This is my second weblog</description>
+    </item>
+    
+  </channel>
+</rss>

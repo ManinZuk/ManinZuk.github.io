@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://urzeric.github.io/sitemap.xml
